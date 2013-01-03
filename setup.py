@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='csvtools',
@@ -8,6 +8,10 @@ setup(
     description='Handy command line scripts for fussing with CSV files.',
     author='Will Ballard',
     author_email='wballard@mailfame.net',
-    packages=['csvtools'],
-    scripts=['scripts/csv_columns'],
+    packages=find_packages(),
+    entry_points={
+        'console_scripts': [
+            'csv_columns = csvtools.columns:main',
+        ]
+    },
 )
