@@ -1,7 +1,3 @@
-"""
-All about the columns in a CSV file.
-"""
-
 import csv
 import sys
 import argparse

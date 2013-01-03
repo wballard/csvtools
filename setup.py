@@ -12,6 +12,7 @@ setup(
     entry_points={
         'console_scripts': [
             'csv_columns = csvtools.columns:main',
+            'csv_cut = csvtools.cut:main',
         ]
     },
 )
